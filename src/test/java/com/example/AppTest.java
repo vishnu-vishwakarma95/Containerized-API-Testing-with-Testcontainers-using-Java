@@ -5,7 +5,7 @@ import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.containsString;
 
 @Testcontainers
 public class AppTest {
@@ -19,13 +19,13 @@ public class AppTest {
         Integer mappedPort = container.getMappedPort(80);
         String containerAddress = "http://" + container.getHost() + ":" + mappedPort;
 
-        // Test 1 (Failure): Assert HTML body contains 'Welcome to nginx!'
+        // Test 1 (Success): Assert HTML body contains 'Welcome to nginx!'
         given()
             .when()
             .get(containerAddress)
             .then()
             .statusCode(200)
-            .body("html.body", equalTo("Welcome to nginx!"));  // This will fail due to HTML formatting differences
+            .body(containsString("Welcome to nginx!"));  // Check if the welcome message is present in the response body
     }
 
     @Test

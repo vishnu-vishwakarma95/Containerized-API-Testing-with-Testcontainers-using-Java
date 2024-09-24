@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.AppTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.23 s <<< FAILURE! - in com.example.AppTest
-testContainerRunning  Time elapsed: 3.422 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-XML path html.body doesn't match.
-Expected: Welcome to nginx!
-  Actual: <Welcome to nginx!If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.nginx.orgnullnginx.comThank you for using nginx.>
-
-	at com.example.AppTest.testContainerRunning(AppTest.java:28)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.005 s - in com.example.AppTest
