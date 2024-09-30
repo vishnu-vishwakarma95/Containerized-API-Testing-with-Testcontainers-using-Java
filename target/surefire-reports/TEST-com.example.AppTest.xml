@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AppTest" time="4.005" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AppTest" time="9.462" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/nashtech/Containerized-API-Testing-with-Testcontainers/target/surefire/surefirebooter9323973934644776869.jar /home/nashtech/Containerized-API-Testing-with-Testcontainers/target/surefire 2024-09-24T08-34-04_150-jvmRun1 surefire5735254703798220161tmp surefire_05106414781330844438tmp"/>
+    <property name="sun.java.command" value="/home/nashtech/Containerized-API-Testing-with-Testcontainers/target/surefire/surefirebooter8562220953132337582.jar /home/nashtech/Containerized-API-Testing-with-Testcontainers/target/surefire 2024-09-30T15-59-56_418-jvmRun1 surefire9175730734270069901tmp surefire_02344866941774013607tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/nashtech/Containerized-API-Testing-with-Testcontainers/target/test-classes:/home/nashtech/Containerized-API-Testing-with-Testcontainers/target/classes:/home/nashtech/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.1/junit-jupiter-api-5.7.1.jar:/home/nashtech/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/nashtech/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/nashtech/.m2/repository/org/junit/platform/junit-platform-commons/1.7.1/junit-platform-commons-1.7.1.jar:/home/nashtech/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.1/junit-jupiter-engine-5.7.1.jar:/home/nashtech/.m2/repository/org/junit/platform/junit-platform-engine/1.7.1/junit-platform-engine-1.7.1.jar:/home/nashtech/.m2/repository/org/testcontainers/junit-jupiter/1.16.0/junit-jupiter-1.16.0.jar:/home/nashtech/.m2/repository/org/testcontainers/testcontainers/1.16.0/testcontainers-1.16.0.jar:/home/nashtech/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/nashtech/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/nashtech/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/nashtech/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/nashtech/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/nashtech/.m2/repository/com/github/docker-java/docker-java-api/3.2.11/docker-java-api-3.2.11.jar:/home/nashtech/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/nashtech/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.2.11/docker-java-transport-zerodep-3.2.11.jar:/home/nashtech/.m2/repository/com/github/docker-java/docker-java-transport/3.2.11/docker-java-transport-3.2.11.jar:/home/nashtech/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/nashtech/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/home/nashtech/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/home/nashtech/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/home/nashtech/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/nashtech/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/nashtech/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/nashtech/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/nashtech/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/home/nashtech/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/nashtech/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/nashtech/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/home/nashtech/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/home/nashtech/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/home/nashtech/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/home/nashtech/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/nashtech/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/nashtech/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/nashtech/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/nashtech/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,12 +32,12 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/nashtech/Containerized-API-Testing-with-Testcontainers/target/surefire/surefirebooter9323973934644776869.jar"/>
+    <property name="surefire.real.class.path" value="/home/nashtech/Containerized-API-Testing-with-Testcontainers/target/surefire/surefirebooter8562220953132337582.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.24+8-post-Ubuntu-1ubuntu320.04"/>
     <property name="user.name" value="nashtech"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.15.0-121-generic"/>
+    <property name="os.version" value="5.15.0-122-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -58,6 +58,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testContainerRunning" classname="com.example.AppTest" time="3.174"/>
-  <testcase name="testContainerStatusCode" classname="com.example.AppTest" time="0.764"/>
+  <testcase name="testNotFound" classname="com.example.AppTest" time="3.414"/>
+  <testcase name="testContainerRunning" classname="com.example.AppTest" time="0.747"/>
+  <testcase name="testResponseTime" classname="com.example.AppTest" time="1.06"/>
+  <testcase name="testServerHeader" classname="com.example.AppTest" time="1.001"/>
+  <testcase name="testContentType" classname="com.example.AppTest" time="1.043"/>
+  <testcase name="testContainerStatusCode" classname="com.example.AppTest" time="1.051"/>
+  <testcase name="testPageTitle" classname="com.example.AppTest" time="1.061"/>
 </testsuite>

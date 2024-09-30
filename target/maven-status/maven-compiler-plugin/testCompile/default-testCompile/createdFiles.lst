@@ -1,1 +1,4 @@
+com/example/BaseTest.class
+com/example/ApiRequestHelper.class
 com/example/AppTest.class
+com/example/ContainerManager.class

@@ -1,0 +1,56 @@
+You're creating automated tests for APIs using a tool called Testcontainers with REST Assured.
+This allows you to test how your APIs respond under different conditions without needing to set up a real server every time. 
+Instead, you use Docker to create temporary, lightweight servers (called containers) that simulate the real environment.
+
+Steps in Simple Terms
+Set Up Environment:
+
+You install Docker on your machine. Docker helps you create and manage containers.
+Create a Project:
+
+You set up a Java project using Maven, which helps manage your project’s libraries and dependencies.
+Add Dependencies:
+
+You include libraries in your project:
+REST Assured: Helps you write tests for your APIs.
+Testcontainers: Lets you create containers for testing.
+Write Tests:
+
+You create Java classes where you write your tests using REST Assured.
+In your tests, you use Testcontainers to spin up a temporary container running nginx, which acts as a mock server.
+Run Tests:
+
+You run your tests, which check if the mock server is responding correctly (e.g., returning the right status code or content).
+If the tests pass, it means your API behaves as expected.
+Clean Up:
+
+After the tests finish, Testcontainers automatically stops and removes the container, so you don’t have leftover containers taking up space.
+Why This is Useful
+Automation: You can run these tests automatically whenever you make changes to your API, ensuring everything still works.
+Consistency: Since the tests run in containers, they behave the same way every time, regardless of where you run them.
+Speed: You can quickly create and destroy containers without needing to manage a full server setup.
+
+
+BaseTest.java (if used):
+Purpose: Typically, this file serves as a base class for your tests, containing common setup and teardown logic, such as starting and stopping the container.
+Execution: If BaseTest.java is included, it is executed first. The setup method (e.g., annotated with @BeforeAll) in BaseTest.java is called to prepare the environment before any tests in the subclasses are run.
+
+ContainerManager.java (if used):
+Purpose: This file manages the lifecycle of the Docker containers, ensuring they are started and stopped correctly.
+Execution: Similar to BaseTest.java, if it exists, any setup methods to start the container would be called before running tests in AppTest.java or other test classes. This might involve pulling the necessary Docker image and starting the container.
+
+AppTest.java:
+Purpose: This is the main test class where your actual test cases are defined. It contains the @BeforeAll and @AfterAll methods to manage container lifecycle and the test methods themselves.
+Execution:
+When you run the test suite, the @BeforeAll method is executed first to start the Nginx container.
+After the container is running, the RestAssured base URI is configured to point to the container’s address.
+Each individual test method (e.g., testServerHeader, testContentType, etc.) is executed in sequence. During each test:
+An HTTP request is sent to the Nginx server.
+Assertions are made to verify that the responses meet the expected criteria.
+After all test methods have been executed, the @AfterAll method is called to stop the Nginx container, cleaning up the environment.
+
+ApiRequestHelper.java:
+Purpose: This utility class is designed to encapsulate common API request methods, such as GET and POST requests.
+Execution: It is called by AppTest.java to send requests to the Nginx container. The test methods in AppTest.java can use the methods from ApiRequestHelper to perform requests instead of writing the request code directly in the test methods.
+Example: Instead of writing the request code directly in a test method, you can call ApiRequestHelper.getRequest("/") to get the response for the root endpoint.
+Summary 
